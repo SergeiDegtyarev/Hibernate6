@@ -15,17 +15,16 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
-        SessionFactory sessionFactory = Util.getSessionFactory();
 
-//        UserService user = new UserServiceImpl();
-//        user.createUsersTable();
-//        user.saveUser("Иван","Сергеевич", (byte) 50);
-//        user.saveUser("Сергей","Александрович", (byte) 28);
-//        user.saveUser("Елена","Владимировна", (byte) 36);
-//        user.saveUser("Антон","Антонович", (byte) 21);
-//        user.getAllUsers();
-//        user.cleanUsersTable();
-//        user.dropUsersTable();
+        UserService user = new UserServiceImpl();
+        user.createUsersTable();
+        user.saveUser("Иван","Сергеевич", (byte) 50);
+        user.saveUser("Сергей","Александрович", (byte) 28);
+        user.saveUser("Елена","Владимировна", (byte) 36);
+        user.saveUser("Антон","Антонович", (byte) 21);
+        user.getAllUsers();
+        user.cleanUsersTable();
+        user.dropUsersTable();
 
 
     }
